@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        section{
+            width: 190px;
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid black;
+            box-shadow: 10px 10px 10px gray;
+        }
+        div{
+            width: 90%;
+            padding: 9px;
+            height: 20px;
+            border: 1px solid black;
+        }
+        button{
+            background-color: black;
+            color: white;
+            width: 38px;
+            height: 38px;
+            font-size: 20px;
+            margin: 2px;
+            border: none;
+            box-shadow: 3px 3px 3px gray;
+        }
+        button:hover{
+            background-color: green;
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+            box-shadow: 3px 3px 3px red;
+        }
+    </style>
+</head>
+<body>
+    <section class="cal_box">
+        <div class="cal_screen"></div>
+        <button onclick="getCurrentdata(this.innerText)">1</button>
+        <button onclick="getCurrentdata(this.innerText)">2</button>
+        <button onclick="getCurrentdata(this.innerText)">3</button>
+        <button onclick="getCurrentdata(this.innerText)">4</button>
+        <button onclick="getCurrentdata(this.innerText)">5</button>
+        <button onclick="getCurrentdata(this.innerText)">6</button>
+        <button onclick="getCurrentdata(this.innerText)">7</button>
+        <button onclick="getCurrentdata(this.innerText)">8</button>
+        <button onclick="getCurrentdata(this.innerText)">9</button>
+        <button onclick="getCurrentdata(this.innerText)">0</button>
+        <button onclick="getCurrentdata(this.innerText)">+</button>
+        <button onclick="getCurrentdata(this.innerText)">-</button>
+        <button onclick="getCurrentdata(this.innerText)">*</button>
+        <button onclick="getCurrentdata(this.innerText)">/</button>
+        <button onclick="getCurrentdata(this.innerText)">%</button>
+        <button onclick="getCurrentdata(this.innerText)">.</button>
+        <button onclick="ans()">=</button>
+    </section>
+    <script type="text/javascript">
+        var di=document.getElementsByTagName('div')[0];
+        function getCurrentdata(a)
+        {
+            di.innerText+=a;
+        }
+        function ans(){
+            di.innerText=eval(di.innerText);
+        }
+    </script>
+</body>
+</html>

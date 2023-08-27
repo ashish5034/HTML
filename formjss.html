@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form javascript</title>
+</head>
+<body>
+    <form>
+        <label>Enter Password</label>
+        <input type="Password" name="User Password">
+        <font color=""></font>
+        <span></span>
+    </form>
+    <button onclick="check_pass()"> varify Password</button>
+    <script type="text/javascript">
+    function check_pass(){
+        var span_err=document.getElementsByTagName('span')[0];
+        var input_text=document.getElementsByTagName('input')[0];
+        if(input_text.value=="TechRel@123"){
+            span_err.innerText="valid Text";
+            span_err.style.color="green";
+        }else{
+            span_err.innerText="Invalid Text";
+            span_err.style.color="red";
+        }
+    }
+</script>
+</body>
+</html>

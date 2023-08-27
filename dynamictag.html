@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamictag</title>
+</head>
+<body>
+    <section>
+ 
+    </section>
+    <div></div>
+    <button onclick="ct()">click me</button>
+    <script type="text/javascript">
+        function ct()
+        {
+                var pt=prompt("give me tag name");
+                var utx=prompt("user give me text for tag"); 
+      var h1=document.createElement(pt);
+      var tx=document.createTextNode(utx);
+          h1.appendChild(tx);
+          h1.align='center';/use in attribute in html/
+          h1.style.color="blue";/* use in attribute in css*/
+          h1.style.backgroundColor="gold";
+          h1.style.position="relative";
+          h1.style.top="100px";
+        
+          var sec=document.getElementsByTagName('div')[0];
+               sec.appendChild(h1);
+        }
+           
+    </script>
+</body>
+</html>

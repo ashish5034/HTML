@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+</title>
+<style>
+div{
+    width: 200px;
+    height: 200px;
+    border: 70px solid white;
+    margin: 60px;
+    border-radius: 50%;
+
+    animation-name: loder;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes loder{
+    0%{}
+    25%{ border-left: 70px solid cyan;
+        border-top: 70px solid white;
+        border-right: 70px solid white;
+        border-bottom: 70px solid white;}
+    50%{ border-left: 70px solid white;
+        border-top: 70px solid yellow;
+       
+        border-right: 70px solid white;
+        border-bottom: 70px solid white;}
+    75%{ border-left: 70px solid white;
+        border-top: 70px solid white;
+        border-right: 70px solid darkcyan;
+        
+        border-bottom: 70px solid white;}
+    100%{border-left: 70px solid white;
+        border-top: 70px solid white;
+        border-right: 70px solid white; 
+        border-bottom: 70px solid red;}
+}
+</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

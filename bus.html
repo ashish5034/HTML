@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        div{
+            width: 250px; 
+            height: 200px; 
+            background-color: lightgray;
+            float: left; 
+            margin: 20px;
+        }
+        #papa{display:flex;}
+        #child-form{flex: 1; border: 1px solid black;}
+        #child-seat{flex: 3;border: 1pxsolid black;}
+    </style>
+</head>
+<body>
+    <section id="papa">
+        <section id="child-form">
+            <label>Name </label><br>
+            <input type="text" name=""><br>
+            <label>Age</label><br>
+            <input type="text" age=""><br>
+            <label>Gender </label><br>
+            <input type="text" gender=""><br>
+            <label>Contact</label><br>
+            <input type="text" contact=""><br>
+            <label>StartPoint </label><br>
+            <input type="text" startpoint=""><br>
+            <label>EndPoint</label><br>
+            <input type="text" endpoint=""><br>
+            
+            
+        </section>
+    <section id="child-seat">
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+</section></section>
+    <script type="text/javascript">
+        function booking(a){
+            var name=document.getElementsByTagName('input')[0].value;
+            var age=document.getElementsByTagName('input')[1].value;
+            var gender=document.getElementsByTagName('input')[2].value;
+            var contact=document.getElementsByTagName('input')[3].value;
+            var startpoint=document.getElementsByTagName('input')[4].value;
+            var endpoint=document.getElementsByTagName('input')[5].value;
+
+            a.innerHTML=`
+            <ul>
+        <li>Name:${name}</li>
+        <li>Age:${age}</li>
+        <li>Gender:${gender}</li>
+        <li>Contact:${contact}</li>
+        <li>Start point:${startpoint}</li>
+        <li>End Point:${endpoint}</li>
+    </ul>`;
+            a.style.color="black";
+            a.style.backgroundColor="gold";
+            a.style.textAlign="center";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter Your Name</label><br>
+        <input type="text" placeholder="Enter your name"><span></span><br>
+        <label>Enter Your Email</label><br>
+        <input type="text" placeholder="Enter your Email"><span></span><br>
+        <label>Enter Your Password</label><br>
+        <input type="password" placeholder="Enter your Password">
+        <font color="red">*</font>
+        <span></span><br>
+    </form>
+    <button onclick="Check_pass()">Click on Btn</button>
+    <script type="text/javascript">
+        function check_pass()
+        {
+            var span_error=document.getElementsByTagName('span')[2];
+            var input_text=document.getElementsByTagName('input')[2];
+            if(input_text.value=="Neha@555")
+            {
+              span_error.innerText="valid Text";
+              span_error.style.color="green";
+            }
+            else
+            {
+                 span_error.innerText="invalid data please enter valid password";
+                 span_error.style.color="red";
+            }
+          }
+    </script>
+</body>
+</html>

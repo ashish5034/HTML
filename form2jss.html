@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter Mail</label><br>
+        <input type="Mail" name="">
+        <span></span><br>
+        <label>Enter password</label><br>
+        <input type="password" name="">
+        <font color="red">*</font>
+        <span></span><br>
+       </form>
+    <button onclick="check_pass()">verify the password</button> 
+        <script type="text/javascript">
+          function check_pass(){
+            var span_error=document.getElementsByTagName('span')[0];
+            var input_text=document.getElementsByTagName('input')[0];
+            if(input_text.value==neha@gmail.com){
+                span_error.innerText="valid";
+            }else{
+                span_error.innerText="invalid";
+            }
+            var span_error=document.getElementsByTagName('span')[1];
+            var input_text=document.getElementsByTagName('input')[1];
+            if(input_text.value=="Neha@555"){
+              span_error.innerText="valid";
+              span_error.style.color="purple";
+            }else{
+                 span_error.innerText="invalid";
+                 span_error.style.color="red";
+            }
+          }
+        </script>
+    </form>
+</body>
+</html>

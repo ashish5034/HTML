@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            button{
+                padding: 10px 20px;
+                margin: 230px;
+                background-color: red;
+                color: wheat;
+                border: none;
+                animation-name: Ashish;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes Ashish{
+                50%{
+                    transform: rotate(360deg);
+                }
+                100%{
+                    transform: rotate(-360deg);
+                    background-color: black;
+                }
+            }
+            body{
+                animation-name: lighting;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes lighting{
+                0%{}
+                10%{background-color: red;}
+                20%{background-color: blanchedalmond; }
+                30%{background-color: black;}
+                40%{background-color: blueviolet; }
+                50%{background-color: teal; }
+                60%{background-color: brown;}
+                70%{background-color: salmon;}
+                80%{   background-color: gold;}
+90%{   background-color: silver;}
+100%{background-color: khaki;}
+
+    
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <button>My animated button </button>
+    </body>
+</html>

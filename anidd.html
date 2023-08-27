@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            div{
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                background-color: red;
+                margin: 400px;
+                animation-name: inc;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes inc{
+                0%{}
+                10%{transform: scale(3); background-color: blue;}
+                20%{transform: scale(6);}
+                30%{transform: scale(9); background-color: aquamarine;}
+                40%{transform: scale(12);}
+                50%{transform: scale(15);background-color: brown;}
+                60%{transform: scale(15);}
+                70%{transform: scale(12); background-color: chocolate;}
+                80%{transform: scale(9);}
+                90%{transform: scale(6);background-color: deepskyblue;}
+                100%{transform: scale(3);}
+            }
+            body{
+                animation-name: lighting;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes lighting{
+                0%{}
+                10%{background-color: red;}
+                20%{background-color: blanchedalmond; }
+                30%{background-color: black;}
+                40%{background-color: blueviolet; }
+                50%{background-color: teal; }
+                60%{background-color: brown;}
+                70%{background-color: salmon;}
+                80%{background-color: gold;}
+                90%{background-color: silver;}
+                100%{background-color: khaki;}
+            }
+            button{
+                padding: 30px 100px;
+                border: black;
+                background-color: lawngreen;
+                color: black;
+                font-size: large;
+                margin: 50px;
+                animation-name: noded;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes noded{
+                0%{}
+                25%{margin-left: 1100px; margin-top: 0px;}
+                50%{margin-left: 1100px; margin-top: 800px;}
+                100%{margin-left: 0px; margin-top: 800px;}
+            }
+        </style>
+    </head>
+    <body>
+        <button>Click Me</button>
+        <div></div>
+       
+    </body>
+</html>

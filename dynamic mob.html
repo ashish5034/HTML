@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        section{
+            margin: 50px;
+            padding: 6px;
+            border: 1px solid black;
+            width: 420px;
+           
+        }
+        div{
+            border: 1px solid black;
+            padding: 6px;
+        } 
+        #screen{
+            height: 500px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="screen">
+
+        </div>
+        <div>
+            <input type="text" onfocusout="me(this.value)" placeholder="Sona">
+            <button onclick="myimg()">></button>
+            <input type="text" onfocusout="frnd(this.value)" placeholder="Babu">
+            <button onclick="myimg()">></button>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function me(a){
+            var p=document.createElement('p');
+            var tx=document.createTextNode(a);
+            p.appendChild(tx);
+            var sc=document.getElementById('screen');
+            sc.appendChild(p);
+            document.getElementsByTagName('input')[0].value='';
+        }
+        function frnd(b){
+            var p=document.createElement('p');
+            var tx=document.createTextNode(b);
+            p.appendChild(tx);
+            p.align='right';
+            var sc=document.getElementById('screen');
+            sc.appendChild(p);
+            document.getElementsByTagName('input')[1].value='';
+        }
+        function myimg()
+        {
+            var a=prompt('enter path');
+            var im=document.createElement('img');
+            im.src=a;
+            im.width="100";
+            im.height="70";
+            var sc=document.getElementById('screen');
+            sc.appendChild(im);
+        }
+        function myimg()
+        {
+            var b=prompt('enter path');
+            var im=document.createElement('img');
+            im.src=b;
+            im.width="100";
+            im.height="70";
+            var sc=document.getElementById('screen');
+            sc.appendChild(im);
+        }
+    </script>
+</body>
+</html>

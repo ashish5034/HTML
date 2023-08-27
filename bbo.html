@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            #A{
+                animation-name: a;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes a{
+                100%{transform: rotate(360deg);}
+            }
+            #B{
+                animation-name: b;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes b{
+                100%{transform: rotateX(360deg);}
+            }
+            #C{
+                animation-name: c;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes c{
+                100%{transform: rotateY(360deg);}
+            }
+            body{
+                animation: aa;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes aa{
+                0%{}
+                10%{color: black;}
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://thumbs.dreamstime.com/b/cute-man-face-cartoon-cute-man-face-cartoon-vector-illustration-graphic-design-135024353.jpg" width="200" height="200" id="A">
+        <img src="https://image.shutterstock.com/image-vector/young-man-face-cartoon-260nw-1224888760.jpg" width="200" height="200" id="B">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/541/050/small/boy-cartoon-face-free-vector.jpg" height="200" width="200" id="C">
+    </body>
+</html>

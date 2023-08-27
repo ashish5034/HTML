@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		nav{
+			text-align: center;
+			padding: 14px;
+			box-shadow: 0px 3px 9px gray;
+			margin-bottom: 4px;
+			position: fixed;
+			top: 0px;
+			width: 100%;
+			background-color: white;
+		}
+
+		nav ul{
+			list-style-type: none;
+		}
+		nav ul li{
+			display: inline;
+			padding: 0px 15px;
+		}
+		nav ul li img{}
+		nav ul li a{
+			text-decoration: none;
+			color: gray;
+		}
+		nav ul li .fa{}
+		nav ul li input{}
+
+		#banner{
+			margin-top: 80px;
+			width: 100%;
+			height: 250px;
+			background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLrtcjed1oMo-GViFr9XQNkB74SZnDTiwokmGfi1kTt3zOA57N1IjQ16e3zuQGa5Y3pC0&usqp=CAU');
+			background-size: 100% 100%;
+			color: white;
+			text-align: center;
+		}
+		#banner h1{
+			padding-top: 70px;
+			font-size: 40px;
+		}
+		#banner p{}
+		#banner .fa{}
+		#banner span{}
+		#banner button{
+			padding: 10px 20px;
+			border: 0.5px solid lightgray;
+			position: relative;
+			top:100px;
+
+		}
+		#product{
+			background-color: lightgray;
+			padding: 120px;
+		}
+		#papa{
+			display: flex;
+		}
+		#large{
+			flex: 4;
+			
+			background-color: white;
+			margin: 3px;
+		}
+		#small{
+			flex: 1;
+			 text-align: justify;
+			 padding: 20px;
+			background-color: white;
+			margin: 3px;
+		}
+		#next_papa{
+			display: flex;
+			margin: 15px;
+			box-shadow: 3px 3px 8px lightgray;
+		}
+		#next_papa div{
+			flex: 1;
+			padding: 15px;
+		}
+		#orange{
+			background-color: orange;
+			color: white;
+			padding: 4px 14px;
+			border: none;
+		}
+		#black{
+			background-color: black;
+			color: white;
+			border: none;
+			padding: 4px 14px;
+			position: relative;
+			left: -10px;
+		}
+		#cut button{
+			padding: 7px 10px;
+			border: none;
+			margin: 2px;
+			background-color: white;
+			box-shadow: 2px 2px 8px lightgray;
+		}
+		 #one{
+		 	padding-right: 30px !important; 
+		 	background-color: orange !important;
+		 	clip-path: polygon(0 1%, 75% 0, 100% 100%, 0% 100%);
+		 }
+		 #tow{
+		 	padding-left: 30px !important;
+		 	background-color: black !important;
+		 	color: white;
+		 	position: relative;
+		 	left: -25px;
+		 	clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 100%);
+
+		 }
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>
+				<img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/41627/bird-logo-clipart-xl.png" width="80" height="30">
+			</li>
+			<li>
+				<a href="">Home</a>
+			</li>
+			<li>
+				<a href="">About <i class="fa fa-angle-down"></i></a>
+			</li>
+			<li>
+				<a href="">Blog <i class="fa fa-angle-down"></i></a>
+			</li>
+			<li>
+				<a href="">Product <i class="fa fa-angle-down"></i></a>
+			</li>
+			<li>
+				<a href="">Login <i class="fa fa-angle-down"></i></a>
+			</li>
+			<li>
+				<a href="">Servic</a>
+			</li>
+			<li>
+				<i class="fa fa-envelope-open-o"></i>
+			</li>
+			<li>
+				<input type="text" name="" placeholder="Search">
+			</li>
+		</ul>
+	</nav>
+
+
+
+	<section id="banner">
+		<h1>Product List</h1>
+		<p>--------<i class="fa fa-motorcycle"></i>---------</p>
+		<button>
+			<i class="fa fa-home"></i>
+			<span>Product List</span>
+		</button>
+	</section>
+
+
+	<section id="product">
+		<section id="papa">
+			<div id="large">
+				<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+					<section id="next_papa">
+					<div>
+						<section id="top-fix">
+							<button id="orange">size</button>
+							<button id="black">size</button>
+						</section>
+
+						<img src="https://5.imimg.com/data5/AL/PP/MY-25464683/bike-gloves-full-500x500.jpg" width="100%" height="250">
+					</div>
+					<div>
+						<h2>Handglose is good for any bike rider</h2>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<h1>$ 234.00 <sub> $500.00</sub></h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							
+
+						</p>
+						<section id="cut">
+							<button id="one">Buy</button>
+							<button id="tow"> Product</button>
+							<button id="three">
+								<i class="fa fa-shopping-cart"></i>
+							</button>
+							<button id="four">
+								<i class="fa fa-tags"></i>
+							</button>
+						</section>
+					</div>
+				</section>
+				
+
+			</div>
+			<div id="small">
+				<h3>Side Box</h3>
+				<button>Add Product</button>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</section>
+	</section>
+
+</body>
+</html>
