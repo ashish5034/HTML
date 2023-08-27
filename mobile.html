@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        section{
+            margin: 50px;
+            padding: 6px;
+            border: 1px solid black;
+            width: 400px;
+        }
+        div{
+            border: 1px solid black;
+            padding: 6px;
+        }
+        #screen{
+            height: 500px;
+        }
+        #button{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="screen">
+
+        </div>
+        <div>
+            <button onclick="me()">Sona</button>
+            <button onclick="frnd()">Babu</button>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function me(){
+            var p=document.createElement('p');
+            var tx=document.createTextNode('I Love U ):');
+            p.appendChild(tx);
+            var sc=document.getElementById('screen');
+            sc.appendChild(p);
+        }
+        function frnd(){
+            var p=document.createElement('p');
+            var tx=document.createTextNode('I love U Too ):');
+            p.appendChild(tx);
+            p.align='right';
+            var sc=document.getElementById('screen');
+            sc.appendChild(p);
+        }
+    </script>
+</body>
+</html>

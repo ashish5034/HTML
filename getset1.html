@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getset</title>
+</head>
+<body>
+    <h1 id="aa" align="right">one</h1>
+    <h1 id="bb" align="left">two</h1>
+    <h1 id="cc" align="center">three</h1>
+    <h1 id="dd" align="right">four</h1>
+    <h1 id="ee" align="center" style="color: red; padding:20px">five</h1>
+<div></div>
+<script type="text/javascript">
+    var a=document.getElementsByTagName('h1')[3].style.padding;
+    var dd=document.getElementsByTagName('div')[0];
+    dd.innertext="ddww";
+    dd.style.color=a;
+    dd.style.fontSize='50px';
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jq1</title>
+    <script src="JQuery.js"></script>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur laborum magni saepe? Sapiente facilis tempore sequi accusamus,
+         non doloribus recusandae excepturi minima corporis blanditiis hic aperiam, corrupti beatae in.
+    </p>
+    <button>click</button>
+    <script type="text/javascript">
+        $('button').click(function(){
+            $('p').toggle();
+        });
+        $('p').ready(function(){
+            $('p').css("background-color", "pink");  
+        });
+        /*toggle=hide and show when we click on the click button
+        hide=for hide the passage 
+        show =for show the passage */
+    </script>
+</body>
+</html>

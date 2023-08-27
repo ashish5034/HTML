@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var s="I want to explore the world";
+        var startind=s.startsWith('I')
+        document.write(`<h1>${startind}</h1>`);
+        var ed=s.endsWith('world');
+        document.write(`<h1>${ed}</h1>`);
+        var ind=s.indexOf('I')
+        document.write(`<h1>${ind}</h1>`);
+        var inde=s.indexOf('w')
+        document.write(`<h1>${inde}</h1>`);
+        var lastind=s.lastIndexOf('w')
+        document.write(`<h1>${lastind}</h1>`);
+        var car=s.charAt('3')
+        document.write(`<h1>${car}</h1>`);
+        var cod=s.charCodeAt('3');
+        document.write(`<h1>${cod}</h1>`);
+        var inc=s.includes('team');
+        document.write(`<h1>${inc}</h1>`);
+        var xy='  bsbdbcjb';
+        var con=s.concat(xy);
+            document.write('<p>${s}</p>');
+            document.write(`<h1>${con}</h1>`);
+            var conc=s.concat('dfgbhc');
+            document.write('<p>${s}</p>');
+            document.write(`<h1>${conc}</h1>`);
+    </script>
+</body>
+</html>
