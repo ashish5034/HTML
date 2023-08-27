@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        div{
+            width: 250px; 
+            height: 200px; 
+            background-color: lightgray;
+            float: left; 
+            margin: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    <div onclick="booking(this)"></div>
+    
+    <script type="text/javascript">
+        function booking(a){
+            var name=prompt("Enter your name");
+            var age=prompt("Enter your age");
+            var gender=prompt("Enter your gender");
+            var contact=prompt("Enter your contact");
+            var startpoint=prompt("Enter your startpoint");
+            var endpoint=prompt("Enter your endpoint");
+            a.innerHTML=`
+            <ul>
+        <li>Name:${name}</li>
+        <li>Age:${age}</li>
+        <li>Gender:${gender}</li>
+        <li>Contact:${contact}</li>
+        <li>Start point:${startpoint}</li>
+        <li>End Point:${endpoint}</li>
+    </ul>`;
+            a.style.color="black";
+            a.style.backgroundColor="gold";
+            a.style.textAlign="center";
+        }
+    </script>
+</body>
+</html>
